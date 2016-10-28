@@ -1,6 +1,6 @@
 
 
-base = dberror.o buffer_mgr_stat.o storage_mgr.o buffer_mgr.o
+base = dberror.o buffer_mgr_stat.o replacement_strategy.o storage_mgr.o buffer_mgr.o
 
 #test : $(base) test_assign1_1.o
 #	gcc -o test1 $(base) test_assign1_1.o
@@ -23,6 +23,9 @@ dberror.o : dberror.c
 
 storage_mgr.o : storage_mgr.c
 	gcc -c storage_mgr.c -I .
+
+replacement_strategy.o : replacement_strategy.c 
+	gcc -c replacement_strategy.c -I .
 
 buffer_mgr_stat.o : buffer_mgr_stat.c
 	gcc -c buffer_mgr_stat.c -I .
