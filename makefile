@@ -33,10 +33,10 @@ buffer_mgr_stat.o : buffer_mgr_stat.c
 buffer_mgr.o : buffer_mgr.c
 	gcc -c buffer_mgr.c -I .
 
-test_assign1_1.o : test_assign2_1.c
+test_assign2_1.o : test_assign2_1.c
 	gcc -c test_assign2_1.c -I .
 
-test_assign1_2.o : test_assign2_2.c
+test_assign2_2.o : test_assign2_2.c
 	gcc -c test_assign2_2.c -I .
 
 
